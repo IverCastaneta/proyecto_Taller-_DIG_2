@@ -1,0 +1,46 @@
+////////  COMANDOS BÁSICOS  ///////////
+///////////   BASICOS   ///////////////
+Crear proyecto: ionic start
+Instalar dependencias: npm install
+Ejecutar proyecto: ionic serve
+/////////// COMPILACION ///////////////
+Compilar version web: ionic build --prod
+Crear version android: ionic add android
+Ejecutar version android: ionic run android
+Crear version ios: ionic add ios
+Ejecutar version android: ionic run ios
+///////////  CREACIÓN  /////////////////
+crear componente pagina: ionic g page pages/'nombre'
+crear componente interfaz: ionic g component component/'nombre'
+crear servicio: ionic g service services/'nombre'
+crear modulo: ionic g module modules/'npmbre'
+crear guardian: ionic g guard guards/'npmbre'
+//////  PAGINAS ESTANDAR   ///////////
+ionic g page pages/home
+ionic g page pages/login
+ionic g page pages/register
+ionic g page pages/forgot-password
+ionic g page pages/reset-password
+ionic g page pages/profile
+ionic g page pages/search
+ionic g page pages/notifications
+ionic g page pages/ui-components
+ionic g module modules/shared
+ionic g service services/database
+ionic g service service/auth
+ionic g guard guards/auth
+ionic g component components/card
+ionic g component components/tabs
+
+///// PARAMETRIZACION INICIAL //////
+1) crear paginas, servicios, modulos y guardian
+2) probar las rutas con routerLink
+3) vamos a importar card y tabs en sharedModule
+4) vamos a importar sharedModule en ui-components
+5) vamos a maquetar tabs
+6) vamos a maquetar card
+7) vamos a llamar tabs en toda la app
+
+
+
+
