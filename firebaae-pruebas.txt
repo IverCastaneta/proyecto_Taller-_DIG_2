@@ -1,0 +1,64 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouteReuseStrategy, RouterModule } from '@angular/router';
+
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+// Para hacer llamadas http
+import { HttpClientModule } from '@angular/common/http';
+
+// Para utlizar formularios reactivos
+import { ReactiveFormsModule } from '@angular/forms';
+
+// Para cargar Firebase
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+// Para cargar Firebase
+
+// Para ejecutar Swiper
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getAnalytics, provideAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
+import { initializeAppCheck, ReCaptchaEnterpriseProvider, provideAppCheck } from '@angular/fire/app-check';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { getFunctions, provideFunctions } from '@angular/fire/functions';
+import { getMessaging, provideMessaging } from '@angular/fire/messaging';
+import { getPerformance, providePerformance } from '@angular/fire/performance';
+import { getStorage, provideStorage } from '@angular/fire/storage';
+import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
+import { getVertexAI, provideVertexAI } from '@angular/fire/vertexai-preview';
+// Para ejecutar Swiper
+
+@NgModule({
+  declarations: [AppComponent],
+  // Para ejecutar Swiper
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    /////////
+    HttpClientModule,
+    ReactiveFormsModule,
+    // Para cargar Firebase
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    RouterModule
+  ],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, provideFirebaseApp(() => initializeApp({ "projectId": "taller-2-2024", "appId": "1:151674521811:web:02f52e4f76cc12cde26c26", "storageBucket": "taller-2-2024.firebasestorage.app", "apiKey": "AIzaSyATpl0nx7X6qmiUnMS8PZz3cjElons5dTI", "authDomain": "taller-2-2024.firebaseapp.com", "messagingSenderId": "151674521811" })), provideAuth(() => getAuth()), provideAnalytics(() => getAnalytics()), ScreenTrackingService, UserTrackingService, provideAppCheck(() => {
+    // TODO get a reCAPTCHA Enterprise here https://console.cloud.google.com/security/recaptcha?project=_
+    const provider = new ReCaptchaEnterpriseProvider(/* reCAPTCHA Enterprise site key */);
+    return initializeAppCheck(undefined, { provider, isTokenAutoRefreshEnabled: true });
+  }),
+   provideFirestore(() => getFirestore()), provideDatabase(() => getDatabase()), provideFunctions(() => getFunctions()), provideMessaging(() => getMessaging()), providePerformance(() => getPerformance()), provideStorage(() => getStorage()), provideRemoteConfig(() => getRemoteConfig()), provideVertexAI(() => getVertexAI())],
+  bootstrap: [AppComponent],
+})
+export class AppModule { }

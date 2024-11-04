@@ -41,6 +41,20 @@ ionic g component components/tabs
 6) vamos a maquetar card
 7) vamos a llamar tabs en toda la app
 
-
+////// FIREBASE //////
+1) Crear cuenta en FIREBASE
+2) Creado un proyecto en FIREBASE
+3) Agregado una app web a firebase y copio las credenciales de acceso:
+firebaseConfig = {
+  apiKey: "AIzaSyATpl0nx7X6qmiUnMS8PZz3cjElons5dTI",
+  authDomain: "taller-2-2024.firebaseapp.com",
+  projectId: "taller-2-2024",
+  storageBucket: "taller-2-2024.firebasestorage.app",
+  messagingSenderId: "151674521811",
+  appId: "1:151674521811:web:02f52e4f76cc12cde26c26"
+};
+4) instalar angular/fire https://www.npmjs.com/package/@angular/fire
+desde consola de comandos ir a la caprte del proyecto y ejecutar:
+ng add @angular/fire o npm install @angular/fire
 
 
