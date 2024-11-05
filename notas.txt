@@ -56,5 +56,5 @@ firebaseConfig = {
 4) instalar angular/fire https://www.npmjs.com/package/@angular/fire
 desde consola de comandos ir a la caprte del proyecto y ejecutar:
 ng add @angular/fire o npm install @angular/fire
-
-
+5) copiar firebaseConfig en environment y environment.prod
+6) copiar app.module.ts
