@@ -35,5 +35,53 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+@import "./theme/iwer.scss";
+@import "./theme/seba.scss";
 
-@import "./theme/fer.scss"
+/* FUENTES PROYECTO*/
+
+@font-face {
+    font-family: "poligraphergrotesk-semibold";
+    src: url("./assets/fonts/poligraphergrotesk-SemiBold-BF66e3a5da2ab00.otf");
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+//fondo general
+
+:root {
+    --ion-font-family: "poppins-regular";
+}
+
+ion-content {
+    --background: #130223;
+}
+
+h1,
+h2,
+h3 {
+    padding: 12pt;
+    font-family: 'poligraphergrotesk-semibold';
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+h3 {
+    font-size: 15pt;
+}
+
+p {
+    color: var(--ion-color-v2);
+    font-family: 'poppins-regular';
+    font-size: 12pt;
+    padding: 13px;
+}

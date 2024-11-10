@@ -7,35 +7,52 @@
 </ion-header>
 
 
+
+
 <ion-content [fullscreen]="true">
-  <p>
-    {{saludarUnaVez()}}
-  </p>
-  <p>{{categories}}</p>
-  <ul>
-    <li *ngFor="let item of categories">
-      {{item}}
-    </li>
-  </ul>
-  <ion-card *ngFor="let product of products">
-    <img alt="Silhouette of mountains" src="{{product.photo}}" />
-    <ion-card-header>
-      <ion-card-title>{{product.name}}</ion-card-title>
-      <ion-card-subtitle>USD. {{product.price}}</ion-card-subtitle>
-    </ion-card-header>
+  
 
-    <ion-card-content>
-      {{product.descrption}}
-    </ion-card-content>
-  </ion-card>
- <!--  <li routerLink="/register">Login</li>
-  <li><a href="/register">Register</a></li>
-  <li routerLink="/profile">Profile</li>
-  <li routerLink="/search">Search</li>
-  <ion-button [routerLink]="'/register'">Registro</ion-button>
 
-  <app-card></app-card>-->
+  <!--
+  GRILLAS
+  -->
+
+  <h1>h1 heading </h1>
+  <h2>h2 heading</h2>
+  <h3>h3 heading</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam fuga quisquam facere beatae necessitatibus itaque eius cum quis, sed minus aliquam iure ab laboriosam officia, dolore asperiores excepturi praesentium.
+    <ion-button color= v1
+    
+    >
+      Boton PRUEBA
+    </ion-button>
+  
+    <ion-grid>
+    <ion-row>
+      <ion-col color= v1>
+        1
+      </ion-col>
+      <ion-col>
+        2
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        1
+      </ion-col>
+      <ion-col>
+        2
+      </ion-col>
+      <ion-col>
+        3
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
+
 
 
 <app-menu></app-menu>
