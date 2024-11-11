@@ -6,10 +6,11 @@ import { IonicModule } from '@ionic/angular';
 import { TabComponent } from 'src/app/components/tab/tab.component';
 import { CardpapuComponent } from 'src/app/components/cardpapu/cardpapu.component';
 import { ToolbarComponent } from 'src/app/components/toolbar/toolbar.component';
+import { ActionCalendarComponent } from 'src/app/components/action-calendar/action-calendar.component';
 
 @NgModule({
-  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent],
-  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent],
+  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent],
+  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent],
   imports: [
     CommonModule,
     IonicModule.forRoot({

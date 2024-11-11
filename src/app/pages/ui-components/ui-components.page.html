@@ -17,16 +17,19 @@
 
   </app-cardpapu>
 
+  <app-action-calendar>
+
+  </app-action-calendar>
+
   <!-- Boton add -->
-  <div class="contenedorButton">
-    <button class="addButton">
-        <ion-icon style="scale: 3;" name="add" ></ion-icon>
-    </button>
-  </div>
-</ion-content>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" style="margin-bottom: 60px; margin-right: 12px;" >
+    <ion-fab-button color="mostaza2">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 <ion-footer [translucent]="true">
   <ion-toolbar>
-    <app-tab></app-tab>
+    <app-tab ></app-tab>
   </ion-toolbar>
 </ion-footer>
