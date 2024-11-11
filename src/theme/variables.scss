@@ -104,3 +104,20 @@
 	--ion-color-tint: var(--ion-color-mostaza2-tint);
 }
 // color generator :D https://ionicframework.com/docs/theming/colors /
+:root {
+	--ion-color-blanquito: #F8F3F7;
+	--ion-color-blanquito-rgb: 248,243,247;
+	--ion-color-blanquito-contrast: #000000;
+	--ion-color-blanquito-contrast-rgb: 0,0,0;
+	--ion-color-blanquito-shade: #dad6d9;
+	--ion-color-blanquito-tint: #f9f4f8;
+}
+
+.ion-color-blanquito {
+	--ion-color-base: var(--ion-color-blanquito);
+	--ion-color-base-rgb: var(--ion-color-blanquito-rgb);
+	--ion-color-contrast: var(--ion-color-blanquito-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-blanquito-contrast-rgb);
+	--ion-color-shade: var(--ion-color-blanquito-shade);
+	--ion-color-tint: var(--ion-color-blanquito-tint);
+}
