@@ -15,11 +15,11 @@ export class RegisterPage implements OnInit {
     public auth: AuthService
   ) {
     this.form = fb.group({
-      name: ['fer',[Validators.required]],
-      email: ['flopez.m@ucb.edu.bo', [Validators.required, Validators.email]],
-      phone: ['+59170576648'],
-      password: ['123456', [Validators.required,Validators.min(6)]],
-      confirmPassword: ['123456', [Validators.required,Validators.min(6)]],
+      name: ['',[Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      phone: ['+591'],
+      password: ['', [Validators.required,Validators.min(6)]],
+      confirmPassword: ['', [Validators.required,Validators.min(6)]],
     })
   }
 
