@@ -13,5 +13,5 @@ describe('LoginPage', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
+  });
 });

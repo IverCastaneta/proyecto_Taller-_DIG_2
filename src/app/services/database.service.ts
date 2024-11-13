@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AngularFirestore, Query } from '@angular/fire/compat/firestore';
@@ -42,7 +41,7 @@ export class DatabaseService {
   }
 
   // Recupera un documento o registro por su UID
-  getDocumentByUID(collection: string, uid: string): Observable<any> {
+  getDocumentById(collection: string, uid: string): Observable<any> {
     return this.firestore.collection(collection).doc(uid).valueChanges({ idField: 'id' });
   }
 
@@ -50,7 +49,7 @@ export class DatabaseService {
   // Requiere collection (nombre de la colección), customParam (campo para buscar) y searched (valor buscado)
   getCollectionByCustomparam(collection: string, customParam: string, searched: string): Observable<any> {
     return this.firestore.collection(collection, ref => ref.where(customParam, '==', searched))
-      .valueChanges({ idField: 'id' });
-  }
+      .valueChanges({ idField: 'id' });
+  }
 
 }
