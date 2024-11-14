@@ -1,0 +1,167 @@
+[
+    {
+        "nombre": "Restaurante Mirador",
+        "precio": 30,
+        "ciudad": "La Paz",
+        "direccion": "Calle Comercio 789",
+        "ubicacion_gps": [
+            -16.5032,
+            -68.1356
+        ],
+        "foto_principal": "/assets/images/lugares/restaurante_mirador_main.jpg",
+        "fotos_secundarias": [
+            "/assets/images/lugares/restaurante_mirador_foto1.jpg",
+            "/assets/images/lugares/restaurante_mirador_foto2.jpg",
+            "/assets/images/lugares/restaurante_mirador_foto3.jpg"
+        ],
+        "nombre_propietario": "Ana Mendoza",
+        "descripcion": "Un restaurante con vistas impresionantes de la ciudad y una excelente selección de platos locales.",
+        "userId": "Olf0SPmz84UTGl26MzDKhKJdTh03",
+        "servicios": [
+            {
+                "nombre_servicio": "WiFi",
+                "icono_servicio": "/assets/iconos/wifi_icon.png"
+            },
+            {
+                "nombre_servicio": "Vista Panorámica",
+                "icono_servicio": "/assets/iconos/view_icon.png"
+            },
+            {
+                "nombre_servicio": "Reservación",
+                "icono_servicio": "/assets/iconos/reservation_icon.png"
+            }
+        ]
+    },
+    {
+        "nombre": "Casa de Huéspedes Colibrí",
+        "precio": 25,
+        "ciudad": "La Paz",
+        "direccion": "Calle 21 de Calacoto",
+        "ubicacion_gps": [
+            -16.5263,
+            -68.1124
+        ],
+        "foto_principal": "/assets/images/lugares/casa_colibri_main.jpg",
+        "fotos_secundarias": [
+            "/assets/images/lugares/casa_colibri_foto1.jpg",
+            "/assets/images/lugares/casa_colibri_foto2.jpg",
+            "/assets/images/lugares/casa_colibri_foto3.jpg"
+        ],
+        "nombre_propietario": "Carlos Huanca",
+        "descripcion": "Acogedora casa de huéspedes en la zona sur de La Paz, ideal para estancias largas.",
+        "userId": "Olf0SPmz84UTGl26MzDKhKJdTh03",
+        "servicios": [
+            {
+                "nombre_servicio": "Cocina compartida",
+                "icono_servicio": "/assets/iconos/kitchen_icon.png"
+            },
+            {
+                "nombre_servicio": "WiFi",
+                "icono_servicio": "/assets/iconos/wifi_icon.png"
+            },
+            {
+                "nombre_servicio": "Lavandería",
+                "icono_servicio": "/assets/iconos/laundry_icon.png"
+            }
+        ]
+    },
+    {
+        "nombre": "Centro de Eventos Illimani",
+        "precio": 120,
+        "ciudad": "La Paz",
+        "direccion": "Av. Illimani 1000",
+        "ubicacion_gps": [
+            -16.5089,
+            -68.1442
+        ],
+        "foto_principal": "/assets/images/lugares/centro_illimani_main.jpg",
+        "fotos_secundarias": [
+            "/assets/images/lugares/centro_illimani_foto1.jpg",
+            "/assets/images/lugares/centro_illimani_foto2.jpg",
+            "/assets/images/lugares/centro_illimani_foto3.jpg"
+        ],
+        "nombre_propietario": "Laura Flores",
+        "descripcion": "Espacio versátil para eventos sociales y corporativos en el corazón de la ciudad.",
+        "userId": "Olf0SPmz84UTGl26MzDKhKJdTh03",
+        "servicios": [
+            {
+                "nombre_servicio": "Salón de eventos",
+                "icono_servicio": "/assets/iconos/event_icon.png"
+            },
+            {
+                "nombre_servicio": "Catering",
+                "icono_servicio": "/assets/iconos/catering_icon.png"
+            },
+            {
+                "nombre_servicio": "Estacionamiento",
+                "icono_servicio": "/assets/iconos/parking_icon.png"
+            }
+        ]
+    },
+    {
+        "nombre": "Hostal Andes",
+        "precio": 15,
+        "ciudad": "La Paz",
+        "direccion": "Calle Murillo 457",
+        "ubicacion_gps": [
+            -16.5076,
+            -68.1315
+        ],
+        "foto_principal": "/assets/images/lugares/hostal_andes_main.jpg",
+        "fotos_secundarias": [
+            "/assets/images/lugares/hostal_andes_foto1.jpg",
+            "/assets/images/lugares/hostal_andes_foto2.jpg",
+            "/assets/images/lugares/hostal_andes_foto3.jpg"
+        ],
+        "nombre_propietario": "Daniel Rojas",
+        "descripcion": "Hostal económico en el centro histórico, ideal para mochileros y viajeros con presupuesto ajustado.",
+        "userId": "nLGrYCL9EXYRPLbP70Po4SgJlJ72",
+        "servicios": [
+            {
+                "nombre_servicio": "Desayuno",
+                "icono_servicio": "/assets/iconos/breakfast_icon.png"
+            },
+            {
+                "nombre_servicio": "Sala de TV",
+                "icono_servicio": "/assets/iconos/tv_icon.png"
+            },
+            {
+                "nombre_servicio": "WiFi",
+                "icono_servicio": "/assets/iconos/wifi_icon.png"
+            }
+        ]
+    },
+    {
+        "nombre": "Cabaña del Bosque",
+        "precio": 60,
+        "ciudad": "La Paz",
+        "direccion": "Zona Sur, Valle de las Ánimas",
+        "ubicacion_gps": [
+            -16.5402,
+            -68.1425
+        ],
+        "foto_principal": "/assets/images/lugares/cabana_bosque_main.jpg",
+        "fotos_secundarias": [
+            "/assets/images/lugares/cabana_bosque_foto1.jpg",
+            "/assets/images/lugares/cabana_bosque_foto2.jpg",
+            "/assets/images/lugares/cabana_bosque_foto3.jpg"
+        ],
+        "nombre_propietario": "Felipe Aguilar",
+        "descripcion": "Cabaña aislada en medio del bosque, perfecta para desconectar de la ciudad.",
+        "userId": "nLGrYCL9EXYRPLbP70Po4SgJlJ72",
+        "servicios": [
+            {
+                "nombre_servicio": "Chimenea",
+                "icono_servicio": "/assets/iconos/fireplace_icon.png"
+            },
+            {
+                "nombre_servicio": "Cocina completa",
+                "icono_servicio": "/assets/iconos/kitchen_icon.png"
+            },
+            {
+                "nombre_servicio": "Pet Friendly",
+                "icono_servicio": "/assets/iconos/pet_icon.png"
+            }
+        ]
+    }
+]
