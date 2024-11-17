@@ -1,0 +1,20 @@
+.calendario {
+    margin: 0 auto;
+    background-color: var(--ion-color-dark) !important;
+    height: 100%;
+}
+
+.modal-cortado {
+    width: 100%;
+    height: 500px;
+    background-color: var(--ion-color-dark) !important;
+    width: 100%;
+}
+
+ion-modal {
+    --height: auto !important;
+}
+
+ion-segment-view {
+    height: 750px !important;
+}

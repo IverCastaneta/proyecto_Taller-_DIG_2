@@ -42,7 +42,11 @@ const routes: Routes = [
   {
     path: 'ui-components',
     loadChildren: () => import('./pages/ui-components/ui-components.module').then( m => m.UiComponentsPageModule)
+  },  {
+    path: 'reserva',
+    loadChildren: () => import('./pages/reserva/reserva.module').then( m => m.ReservaPageModule)
   },
+
 ];
 
 @NgModule({
