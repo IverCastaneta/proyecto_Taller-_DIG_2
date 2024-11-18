@@ -46,6 +46,10 @@ const routes: Routes = [
     path: 'reserva',
     loadChildren: () => import('./pages/reserva/reserva.module').then( m => m.ReservaPageModule)
   },
+  {
+    path: 'lugar',
+    loadChildren: () => import('./pages/lugar/lugar.module').then( m => m.LugarPageModule)
+  },
 
 ];
 

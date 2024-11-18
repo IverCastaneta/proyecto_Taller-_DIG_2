@@ -1,11 +1,14 @@
-<ion-button mode="ios" id="open-modal" expand="block"><ion-icon name="calendar-outline"></ion-icon></ion-button>
+<ion-button shape="round" mode="ios" id="open-modal" expand="block"><ion-icon name="calendar-outline"></ion-icon></ion-button>
     <ion-modal   trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
-        <ng-template >
+        <ng-template class="fondo2"  color="dark">
             <div  class="modal-cortado ">
                 <ion-datetime color="mostaza2" presentation="date" [multiple]="true" class="calendario" >
+                    <ion-button shape="round">Round</ion-button>
                     <span slot="title"> <h3>Selecciona la fecha</h3></span>
                 </ion-datetime>
+                
             </div>
+            
         </ng-template>
     </ion-modal>
 
