@@ -1,58 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      {{title}}
-    </ion-title>
+    
+  <app-search-bar>
+  </app-search-bar>
   </ion-toolbar>
+
+  <app-toolbar>
+  </app-toolbar>
 </ion-header>
 
-
-
-
 <ion-content [fullscreen]="true">
-  
 
+  <app-cardpapu>
 
-  <!--
-  GRILLAS
-  -->
+  </app-cardpapu>
+  <!-- Boton add -->
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" style="margin-bottom: 60px; margin-right: 12px;" >
+    <ion-fab-button color="mostaza2">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
-  <h1>h1 heading </h1>
-  <h2>h2 heading</h2>
-  <h3>h3 heading</h3>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam fuga quisquam facere beatae necessitatibus itaque eius cum quis, sed minus aliquam iure ab laboriosam officia, dolore asperiores excepturi praesentium.
-    <ion-button color= v1
-    
-    >
-      Boton PRUEBA
-    </ion-button>
-  
-    <ion-grid>
-    <ion-row>
-      <ion-col color= v1>
-        1
-      </ion-col>
-      <ion-col>
-        2
-      </ion-col>
-
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-        1
-      </ion-col>
-      <ion-col>
-        2
-      </ion-col>
-      <ion-col>
-        3
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-</ion-content>
-
-
-
-<app-menu></app-menu>
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <app-tab ></app-tab>
+  </ion-toolbar>
+</ion-footer>
