@@ -8,10 +8,11 @@ import { CardpapuComponent } from 'src/app/components/cardpapu/cardpapu.componen
 import { ToolbarComponent } from 'src/app/components/toolbar/toolbar.component';
 import { ActionCalendarComponent } from 'src/app/components/action-calendar/action-calendar.component';
 import { SearchBarComponent } from 'src/app/components/search-bar/search-bar.component';
+import { DescripcionComponent } from 'src/app/components/descripcion/descripcion.component';
 
 @NgModule({
-  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent],
-  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent, SearchBarComponent],
+  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent],
+  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent],
   imports: [
     CommonModule,
     IonicModule.forRoot({
