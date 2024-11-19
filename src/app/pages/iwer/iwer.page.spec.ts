@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { IwerPage } from './iwer.page';
+import { IWERPage } from './iwer.page';
 
-describe('IwerPage', () => {
-  let component: IwerPage;
-  let fixture: ComponentFixture<IwerPage>;
+describe('IWERPage', () => {
+  let component: IWERPage;
+  let fixture: ComponentFixture<IWERPage>;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IwerPage);
+    fixture = TestBed.createComponent(IWERPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

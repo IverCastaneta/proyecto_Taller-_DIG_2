@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'lugar',
     loadChildren: () => import('./pages/lugar/lugar.module').then( m => m.LugarPageModule)
   },
+  {
+    path: 'iwer',
+    loadChildren: () => import('./pages/iwer/iwer.module').then( m => m.IWERPageModule)
+  },
 
 ];
 

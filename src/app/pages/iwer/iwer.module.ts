@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { IwerPageRoutingModule } from './iwer-routing.module';
+import { IWERPageRoutingModule } from './iwer-routing.module';
 
-import { IwerPage } from './iwer.page';
+import { IWERPage } from './iwer.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    IwerPageRoutingModule
+    IWERPageRoutingModule
   ],
-  declarations: [IwerPage]
+  declarations: [IWERPage]
 })
-export class IwerPageModule {}
+export class IWERPageModule {}
