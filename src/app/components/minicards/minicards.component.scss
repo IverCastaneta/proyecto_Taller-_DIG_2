@@ -1,5 +1,5 @@
 .custom-card {
-    height: 250px; /* Aumenta la altura total del card */
+    height: 240px; /* Aumenta la altura total del card */
   }
   .card-image {
     width: 100%; /* La imagen ocupa todo el ancho del card */
@@ -19,11 +19,11 @@
     padding: 0 0px; /* Ajuste del borde horizontal */
   }
 
-  h1{
+  h4{
     padding: 0;
     margin: 0;
   }
-  h3{
+  h6{
     padding: 0;
     margin: 0;
   }
@@ -31,6 +31,9 @@
   ion-card{
     border-radius: 12px;
     background-color: var(--ion-color-primary);
-    padding: 24;
+    padding: 0%;
+  }
+  ion-card-header{
+    padding-bottom: 0%;
   }
   
