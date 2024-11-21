@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <app-search-bar>
+    </app-search-bar>
+
+    <app-toolbarmarketplace>
+    </app-toolbarmarketplace>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">marketplace</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <app-minicards>
+      </app-minicards>
+    </ion-col>
+    <ion-col>
+      <app-minicards>
+      </app-minicards>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <app-minicards>
+      </app-minicards>
+    </ion-col>
+    <ion-col>
+      <app-minicards>
+      </app-minicards>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <app-tab ></app-tab>
+  </ion-toolbar>
+</ion-footer>

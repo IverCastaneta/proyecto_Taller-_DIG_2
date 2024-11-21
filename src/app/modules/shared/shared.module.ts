@@ -11,10 +11,12 @@ import { SearchBarComponent } from 'src/app/components/search-bar/search-bar.com
 import { DescripcionComponent } from 'src/app/components/descripcion/descripcion.component';
 import { CardReservaComponent } from 'src/app/components/card-reserva/card-reserva.component';
 import { BackComponent } from 'src/app/components/back/back.component';
+import { MinicardsComponent } from 'src/app/components/minicards/minicards.component';
+import { ToolbarmarketplaceComponent } from 'src/app/components/toolbarmarketplace/toolbarmarketplace.component';
 
 @NgModule({
-  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent],
-  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent],
+  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent],
+  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent],
   imports: [
     CommonModule,
     IonicModule.forRoot({

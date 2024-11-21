@@ -1,0 +1,15 @@
+ion-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Ajusta según la jerarquía de tu app */
+  }
+  ion-grid-column{
+    --ion-grid-column-gap: 0px;
+  }
+  ion-grid{
+    padding: 0;
+  }
+  app-minicards{
+    width: 100%;
+  }

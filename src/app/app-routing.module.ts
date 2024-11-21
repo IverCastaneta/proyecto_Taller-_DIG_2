@@ -54,6 +54,10 @@ const routes: Routes = [
     path: 'iwer',
     loadChildren: () => import('./pages/iwer/iwer.module').then( m => m.IWERPageModule)
   },
+  {
+    path: 'marketplace',
+    loadChildren: () => import('./pages/marketplace/marketplace.module').then( m => m.MarketplacePageModule)
+  },
 
 ];
 
