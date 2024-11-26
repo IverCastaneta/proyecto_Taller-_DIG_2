@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LugarPageRoutingModule } from './lugar-routing.module';
+import { PorPageRoutingModule } from './por-routing.module';
 
-import { LugarPage } from './lugar.page';
+import { PorPage } from './por.page';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    LugarPageRoutingModule,
+    PorPageRoutingModule,
     SharedModule
   ],
-  declarations: [LugarPage]
+  declarations: [PorPage]
 })
-export class LugarPageModule {}
+export class PorPageModule {}

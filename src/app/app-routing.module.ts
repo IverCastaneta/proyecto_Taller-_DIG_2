@@ -58,6 +58,18 @@ const routes: Routes = [
     path: 'marketplace',
     loadChildren: () => import('./pages/marketplace/marketplace.module').then( m => m.MarketplacePageModule)
   },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./pages/eventos/eventos.module').then( m => m.EventosPageModule)
+  },
+  {
+    path: 'evento-page',
+    loadChildren: () => import('./pages/evento-page/evento-page.module').then( m => m.EventoPagePageModule)
+  },
+  {
+    path: 'por',
+    loadChildren: () => import('./pages/por/por.module').then( m => m.PorPageModule)
+  },
 
 ];
 

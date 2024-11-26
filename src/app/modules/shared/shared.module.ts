@@ -13,10 +13,14 @@ import { CardReservaComponent } from 'src/app/components/card-reserva/card-reser
 import { BackComponent } from 'src/app/components/back/back.component';
 import { MinicardsComponent } from 'src/app/components/minicards/minicards.component';
 import { ToolbarmarketplaceComponent } from 'src/app/components/toolbarmarketplace/toolbarmarketplace.component';
+import { ToolEventosComponent } from 'src/app/components/tool-eventos/tool-eventos.component';
+import { EventoComponenteComponent } from 'src/app/components/evento-componente/evento-componente.component';
+import { FechaSemanaComponent } from 'src/app/components/fecha-semana/fecha-semana.component';
+import { FechaMesComponent } from 'src/app/components/fecha-mes/fecha-mes.component';
 
 @NgModule({
-  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent],
-  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent],
+  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent, ToolEventosComponent, EventoComponenteComponent, FechaSemanaComponent, FechaMesComponent],
+  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent, ToolEventosComponent, EventoComponenteComponent, FechaSemanaComponent, FechaMesComponent],
   imports: [
     CommonModule,
     IonicModule.forRoot({

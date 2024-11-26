@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LugarPageRoutingModule } from './lugar-routing.module';
+import { EventoPagePageRoutingModule } from './evento-page-routing.module';
 
-import { LugarPage } from './lugar.page';
+import { EventoPagePage } from './evento-page.page';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    LugarPageRoutingModule,
+    EventoPagePageRoutingModule,
     SharedModule
   ],
-  declarations: [LugarPage]
+  declarations: [EventoPagePage]
 })
-export class LugarPageModule {}
+export class EventoPagePageModule {}
