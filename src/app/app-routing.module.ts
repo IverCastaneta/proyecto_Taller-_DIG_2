@@ -42,7 +42,8 @@ const routes: Routes = [
   {
     path: 'ui-components',
     loadChildren: () => import('./pages/ui-components/ui-components.module').then( m => m.UiComponentsPageModule)
-  },  {
+  },
+  {
     path: 'reserva',
     loadChildren: () => import('./pages/reserva/reserva.module').then( m => m.ReservaPageModule)
   },
@@ -70,6 +71,19 @@ const routes: Routes = [
     path: 'por',
     loadChildren: () => import('./pages/por/por.module').then( m => m.PorPageModule)
   },
+  {
+    path: 'view-profile/:uid',
+    loadChildren: () => import('./pages/view-profile/view-profile.module').then( m => m.ViewProfilePageModule)
+  },
+  {
+    path: 'view-evento/:idEvento',
+    loadChildren: () => import('./pages/view-evento/view-evento.module').then( m => m.ViewEventoPageModule)
+  },
+  {
+    path: 'view-lugar/:idLugar',
+    loadChildren: () => import('./pages/view-lugar/view-lugar.module').then( m => m.ViewLugarPageModule)
+  },
+
 
 ];
 

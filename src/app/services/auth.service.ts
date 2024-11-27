@@ -77,7 +77,7 @@ export class AuthService {
           localStorage.setItem('profile', JSON.stringify(res));
           this.profile = res;
         },
-        (error: any) => { console.log(error) })
-  }
+        (error: any) => { console.log(error) })
+  }
 
 }

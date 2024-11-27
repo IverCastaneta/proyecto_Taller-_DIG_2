@@ -17,6 +17,7 @@ import { ToolEventosComponent } from 'src/app/components/tool-eventos/tool-event
 import { EventoComponenteComponent } from 'src/app/components/evento-componente/evento-componente.component';
 import { FechaSemanaComponent } from 'src/app/components/fecha-semana/fecha-semana.component';
 import { FechaMesComponent } from 'src/app/components/fecha-mes/fecha-mes.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent, ToolEventosComponent, EventoComponenteComponent, FechaSemanaComponent, FechaMesComponent],
@@ -26,7 +27,8 @@ import { FechaMesComponent } from 'src/app/components/fecha-mes/fecha-mes.compon
     IonicModule.forRoot({
       rippleEffect: false,
       mode: 'md'
-    })
+    }),
+    RouterModule
   ]
 })
 export class SharedModule { }

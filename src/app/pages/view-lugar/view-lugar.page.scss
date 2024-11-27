@@ -1,0 +1,44 @@
+.ion-card-title{
+    font-family: 'poligraphergrotesk-semibold' !important;
+    font-size: 30pt !important;
+}
+h1{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+ion-card-header{
+    padding: 0 !important;
+    padding-left: 3.9% !important;
+    margin: 1vh 0vh 1vh 0 !important; 
+
+}
+ion-card-subtitle{
+    margin: 0 !important;    
+}
+ion-icon{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+ion-card-content{
+    margin: 0vh 0vh 1vh 0 !important; 
+}
+ion-card{
+    margin: 0 !important;
+}
+
+ion-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+.sinSombra{
+    display: block;
+    box-shadow: none;
+}
+app-back{
+    padding-left: 2%;
+    padding-top: 2%;
+    position: fixed;
+    z-index: 10;
+}
