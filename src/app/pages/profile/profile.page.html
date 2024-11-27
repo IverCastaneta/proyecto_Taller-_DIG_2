@@ -1,18 +1,21 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
       <ion-col>
-        <h1>Hola, {{auth.profile?.name}}</h1>
+        <div class="imagen">
+          <img src="https://drive.google.com/file/d/1BzwK6OkUPRF4MIbvh7-L34LQApDFhaXK/view?usp=drive_link" alt="">
+        </div>
+      </ion-col>
+      <ion-col>
+        <p>Hola,</p>
+        <h1>{{auth.profile?.name}}</h1>
         <p>
-          nombre: {{auth.profile?.name}} <br>
+          {{auth.profile?.name}} <br>
 
-          email: {{auth.profile?.email}} <br>
+          {{auth.profile?.email}} <br>
 
           whatsapp: {{auth.profile?.phone}} <br>
 
@@ -35,4 +38,33 @@
       </ion-card>
     </ion-row>
   </ion-grid>
+  <hr color="mostaza2">
+  <ion-list>
+    <h2>Pertenece a:</h2>
+    <hr color="blanquito">
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Artista</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Propietario</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Productora</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <app-tab ></app-tab>
+  </ion-toolbar>
+</ion-footer>

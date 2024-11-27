@@ -1,14 +1,10 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Crear cuenta</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<ion-header></ion-header>
 <ion-content [fullscreen]="true">
  
   <ion-grid>
     <ion-row>
       <ion-col>
+        <h1>Registrarse</h1>
         <form [formGroup]="form" (ngSubmit)="onSubmitForm()">
           <ion-input 
           label="Email" labelPlacement="floating"
@@ -26,7 +22,7 @@
           label="Confirme Contraseña" labelPlacement="floating"
           formControlName="confirmPassword"></ion-input>
           
-          <ion-button type="submit" shape="round" >Registrar cuenta</ion-button>
+          <ion-button type="submit" shape="round" expand="full" color="mostaza2">Registrar cuenta</ion-button>
 
 
         </form>
@@ -34,3 +30,7 @@
     </ion-row>
   </ion-grid>
 </ion-content>
+<ion-footer>
+  <p>¿Ya tienes cuenta?</p>
+  <ion-button class="crearCuenta" fill="clear" color="mostaza2">Crear cuenta</ion-button>
+</ion-footer>

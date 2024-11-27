@@ -1,11 +1,10 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Iniciar sesion</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<ion-header></ion-header>
 <ion-content [fullscreen]="true">
- 
+  
+  <h1>Ingresar</h1>
+  <p class="Bienvenida">
+    Bienvenido a <strong>BeatSpaces</strong>.
+  </p>
   <ion-grid>
     <ion-row>
       <ion-col>
@@ -14,14 +13,16 @@
           label="Email" labelPlacement="floating"
           formControlName="email"></ion-input>
         
-          <ion-input 
+          <ion-input
           label="Contraseña" labelPlacement="floating"
           formControlName="password"></ion-input>
-          <ion-button type="submit" shape="round" >Ingresar</ion-button>
-
-
+          <ion-button class="Ingresar"expand="block" shape="round" color="mostaza2" type="submit"> Ingresar</ion-button>
         </form>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
+<ion-footer>
+  <p>¿No tienes cuenta?</p>
+  <ion-button class="crearCuenta" fill="clear" color="mostaza2">Crear cuenta</ion-button>
+</ion-footer>
