@@ -1,14 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-minicards',
   templateUrl: './minicards.component.html',
   styleUrls: ['./minicards.component.scss'],
 })
-export class MinicardsComponent  implements OnInit {
+export class MinicardsComponent implements OnInit {
 
-  constructor() { }
+  @Input() data: any;
+  constructor() {
+  }
 
-  ngOnInit() {}
+  ngOnInit(): void {
+    console.log('Data desde card', this.data)
+
+  }
+
 
 }

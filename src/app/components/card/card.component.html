@@ -1,4 +1,4 @@
-<ion-card color="dark">
+<ion-card color="dark" routerLink="/view-lugar/{{data.id}}">
   <img alt="Silhouette of mountains"
     src="https://files.lamega.com.rcnra-dev.com/assets/public/styles/main_image_amp_webp/public/media/image/image/2024-05/concierto-de-musica-electronica.png?VersionId=6F2Fy_JBPVsFu8FDa062nsxOjT0PImDA&h=ae774d90&itok=flLO9JQv" />
 
@@ -9,9 +9,13 @@
 
   <ion-card-content>
     {{data.direccion}}
+
+    <!--
     <ion-button routerLink="/view-lugar/{{data.id}}" class="btn-personalizado" mode="md" fill="solid" shape="round"
       color="warning">
       Ver más
     </ion-button>
+
+    -->
   </ion-card-content>
 </ion-card>

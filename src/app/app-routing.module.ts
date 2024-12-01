@@ -56,11 +56,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/iwer/iwer.module').then( m => m.IWERPageModule)
   },
   {
-    path: 'marketplace',
+    path: 'marketplace/:uid',
     loadChildren: () => import('./pages/marketplace/marketplace.module').then( m => m.MarketplacePageModule)
   },
   {
-    path: 'eventos',
+    path: 'eventos/:uid',
     loadChildren: () => import('./pages/eventos/eventos.module').then( m => m.EventosPageModule)
   },
   {

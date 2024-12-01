@@ -13,3 +13,43 @@ ion-footer {
   app-minicards{
     width: 100%;
   }
+
+  .custom-card {
+    height: 240px; /* Aumenta la altura total del card */
+  }
+  .card-image {
+    width: 100%; /* La imagen ocupa todo el ancho del card */
+    height: 60%; /* La imagen ocupa el 60% de la altura total del card */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+  }
+
+  .custom-title {
+    margin-top: 0px; /* Separación del borde superior */
+    margin-bottom: 0px; /* Separación del subtítulo */
+    padding-left: 0px; /* Distancia del borde izquierdo */
+    padding-right: 0px; /* Distancia del borde derecho */
+  }
+  
+  .custom-subtitle {
+    margin-top: 0px; /* Espacio con el título */
+    padding: 0 0px; /* Ajuste del borde horizontal */
+  }
+
+  h4{
+    padding: 0;
+    margin: 0;
+  }
+  h6{
+    padding: 0;
+    margin: 0;
+  }
+
+  ion-card{
+    border-radius: 12px;
+    background-color: var(--ion-color-primary);
+    padding: 0%;
+  }
+  ion-card-header{
+    padding-bottom: 0%;
+  }
+  

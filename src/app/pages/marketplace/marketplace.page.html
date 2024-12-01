@@ -8,6 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -18,24 +19,17 @@
 <ion-grid>
   <ion-row>
     <ion-col>
-      <app-minicards>
-      </app-minicards>
+
+      <app-minicards [data]="lugar"  *ngFor="let lugar of lugaresFiltrados" ></app-minicards>
+
     </ion-col>
     <ion-col>
-      <app-minicards>
-      </app-minicards>
+
+      <app-minicards [data]="lugar"  *ngFor="let lugar of lugaresFiltrados"></app-minicards>
+
     </ion-col>
   </ion-row>
-  <ion-row>
-    <ion-col>
-      <app-minicards>
-      </app-minicards>
-    </ion-col>
-    <ion-col>
-      <app-minicards>
-      </app-minicards>
-    </ion-col>
-  </ion-row>
+  
 </ion-grid>
 </ion-content>
 

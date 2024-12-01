@@ -1,8 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    
-  <app-search-bar>
-  </app-search-bar>
+
+    <app-search-bar>
+    </app-search-bar>
   </ion-toolbar>
 
   <app-toolbar>
@@ -10,13 +10,13 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
- 
-<app-card [data]="lugar"  *ngFor="let lugar of lugaresFiltrados"></app-card>
 
+  <app-card [data]="lugar" *ngFor="let lugar of lugaresFiltrados"></app-card>
 
+</ion-content>
 
 <ion-footer [translucent]="true">
   <ion-toolbar>
-    <app-tab ></app-tab>
+    <app-tab></app-tab>
   </ion-toolbar>
 </ion-footer>

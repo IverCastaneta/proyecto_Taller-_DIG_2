@@ -19,4 +19,4 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
   ],
   declarations: [ProfilePage]
 })
-export class ProfilePageModule {}
+export class ProfilePageModule {}

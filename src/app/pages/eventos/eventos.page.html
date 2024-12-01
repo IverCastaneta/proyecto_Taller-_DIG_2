@@ -6,7 +6,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <app-cardpapu></app-cardpapu>
+
+  <app-card [data]="lugar" *ngFor="let lugar of lugaresFiltrados"></app-card>
+
 </ion-content>
 
 <ion-footer [translucent]="true">
