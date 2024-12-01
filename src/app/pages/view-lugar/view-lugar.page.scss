@@ -2,10 +2,16 @@
 .ion-card-title{
     font-family: 'poligraphergrotesk-semibold' !important;
     font-size: 30pt !important;
+    padding: 0 !important;
 }
 h1{
     padding: 0 !important;
     margin: 0 !important;
+}
+p{
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 12pt;
 }
 ion-card-header{
     padding: 0 !important;
@@ -14,7 +20,8 @@ ion-card-header{
 
 }
 ion-card-subtitle{
-    margin: 0 !important;    
+    margin: 0 !important; 
+    padding: 0 !important;   
 }
 ion-icon{
     padding: 0 !important;
@@ -42,4 +49,7 @@ app-back{
     padding-top: 2%;
     position: fixed;
     z-index: 10;
+}
+hr{
+    background-color: white;
 }
