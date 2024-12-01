@@ -38,12 +38,12 @@ export class AuthService {
 
   async registerUser(email: string, password: string, additionalData: { name: string; phone: string; username: string }) {
     try {
-      const userCredential: any = await this.auth.createUserWithEmailAndPassword( email, password);
+      const userCredential: any = await this.auth.createUserWithEmailAndPassword(email, password);
       const userId = userCredential.user.uid;
       const userDocRef: any = this.firestore.collection('users').doc(userId).set(additionalData)
-      setTimeout(()=>{
+      setTimeout(() => {
         this.router.navigateByUrl('/login')
-      },2000)
+      }, 2000)
       console.log('Usuario registrado y documento creado en Firestore');
     } catch (error) {
       console.error('Error al registrar usuario:', error);
@@ -52,7 +52,7 @@ export class AuthService {
 
   async loginUser(email: string, password: string) {
     try {
-      const userCredential: any = await this.auth.signInWithEmailAndPassword( email, password);
+      const userCredential: any = await this.auth.signInWithEmailAndPassword(email, password);
       localStorage.setItem('user', JSON.stringify(userCredential.user));
       console.log('Usuario autenticado:', userCredential.user);
       this.getProfile(userCredential.user.uid); ``
@@ -78,6 +78,77 @@ export class AuthService {
           this.profile = res;
         },
         (error: any) => { console.log(error) })
+  }
+
+
+
+  
+
+  addToList(field: any, uid: any) {
+    if (this.profile) {
+      if (this.checkIsFavorite(field, uid) === false) {
+        //agrega un favorito si la lista existe
+        if (this.profile[field]) {
+
+          this.profile[field].push(uid);
+        }
+        else {
+          this.profile[field] = [];
+          this.profile[field].push(uid)
+        }
+      }
+      else {
+        //quita un facvorito
+        let lista: any = [];
+        this.profile[field].forEach((e: any) => {
+          if (e !== uid) lista.push(e);
+        });
+        this.profile[field] = lista;
+      }
+    }
+    else {
+      //agrega el primer favorito si la lista favoritos no existe
+      this.profile[field] = [];
+      this.profile[field].push(uid)
+    }
+    ////// actualizar el perfi
+    let params: any = {}
+    params[field] = this.profile[field]
+    this.db.updateFireStoreDocument('users', this.profile.id, params)
+      .then((res: any) => { console.log('actualizado') })
+  }
+  addToFavorites(uid: any) {
+    if (this.profile?.favorites) {
+      if (this.checkIsFavorite('favorites', uid) === false) {
+        //agrega un favorito si la lista existe
+        this.profile?.favorites.push(uid);
+      }
+      else {
+        //quita un facvorito
+        let lista: any = [];
+        this.profile.favorites.forEach((e: any) => {
+          if (e !== uid) lista.push(e);
+        });
+        this.profile.favorites = lista;
+      }
+    }
+    else {
+      //agrega el primer favorito si la lista favoritos no existe
+      this.profile.favorites = [];
+      this.profile.favorites.push(uid)
+    }
+    ////// actualizar el perfi
+    this.db.updateFireStoreDocument('users', this.profile.id, { favorites: this.profile.favorites })
+      .then((res: any) => { console.log('actualizado') })
+  }
+
+  checkIsFavorite(field: any, uid: any) {
+    if (this.profile[field]) {
+      return this.profile[field].indexOf(uid) >= 0;
+    }
+    else {
+      return false;
+    }
   }
 
 }
