@@ -1,13 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>search</ion-title>
+<!--
+    
+    <ion-searchbar color="dark" animated="true" placeholder="Busca aqui"
+    style="background-color: var(--ion-color-dark); box-shadow: none;"  routerLink="/search/"></ion-searchbar>
+-->
+<ion-searchbar [(ngModel)]="searched" (ngModelChange)="buscar()" mode="ios" color="dark"
+          show-clear-button="always" value=" Search" style="background-color: var(--ion-color-dark); box-shadow: none;" ></ion-searchbar>
+
+        <ion-item color="primary" *ngFor="let lugar of lugaresFiltered" routerLink="/view-lugar/{{lugar.id}}">
+          <ion-avatar slot="start">
+            <img src="https://ionicframework.com/docs/img/demos/card-media.png"
+              alt="">
+          </ion-avatar>
+          <ion-text color="blanquito">
+            {{lugar.nombre}}
+          </ion-text>
+        </ion-item>
+
   </ion-toolbar>
 </ion-header>
 
+
+
+
+
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">search</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
 </ion-content>
