@@ -37,3 +37,13 @@ ion-col{
 hr{
     background:white;
 }
+ion-list{
+    position: relative;
+    justify-content: center;
+}
+ion-chip{
+    background: #fff;
+    padding: 2% 4% 2% 4%;
+    border-radius: 120px ;
+    color: var(--ion-color-primary);
+}
