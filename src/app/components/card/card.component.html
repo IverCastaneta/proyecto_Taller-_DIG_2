@@ -1,15 +1,36 @@
-<ion-card color="dark" >
+<ion-card color="dark">
   <img routerLink="/view-lugar/{{data.id}}" alt="Silhouette of mountains"
     src="https://files.lamega.com.rcnra-dev.com/assets/public/styles/main_image_amp_webp/public/media/image/image/2024-05/concierto-de-musica-electronica.png?VersionId=6F2Fy_JBPVsFu8FDa062nsxOjT0PImDA&h=ae774d90&itok=flLO9JQv" />
 
-  <ion-card-header >
-    <ion-card-title color="mostaza2">{{data.nombre}}</ion-card-title>
+  <ion-card-header>
+    <ion-card-title color="mostaza2" style="font-family: 'poligraphergrotesk-semibold'; font-size: 16pt;">{{data.nombre}}</ion-card-title>
     <ion-card-subtitle>{{data.nombre_propietario}} | USD. {{data.precio}}</ion-card-subtitle>
   </ion-card-header>
 
-  <ion-card-content>
-    {{data.direccion}}
-    
+  <ion-card-content style="position: relative">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          {{data.direccion}}
+        </ion-col>
+        <ion-col>
+          <ion-item color="dark" style="position: absolute; bottom: 1px; right: 1px;">
+
+            <ion-icon name="heart" (click)="auth.addToFavorites(data.id)"
+              [color]="auth.checkIsFavorite('favorites',data.id)===true?'danger': 'light'" slot="end"></ion-icon>
+      
+            <ion-icon name="cart" (click)="auth.addToList('cart',data.id)"
+              [color]="auth.checkIsFavorite('cart',data.id)===true?'danger': 'light'" slot="end"></ion-icon>
+      
+            <!--     <ion-icon *ngIf="auth.checkIsFavorite(data.id)===true" name="heart" color="danger" slot="end"></ion-icon>
+            <ion-icon *ngIf="auth.checkIsFavorite(data.id)===false" name="heart"  color="light" slot="end"></ion-icon>
+          -->
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
     <!--
     <ion-button routerLink="/view-lugar/{{data.id}}" class="btn-personalizado" mode="md" fill="solid" shape="round"
       color="warning">
@@ -18,17 +39,6 @@
 
     -->
   </ion-card-content>
-  
-  <ion-item color="dark" >
 
-    <ion-icon name="heart" (click)="auth.addToFavorites(data.id)"
-    [color]="auth.checkIsFavorite('favorites',data.id)===true?'danger': 'light'" slot="end"></ion-icon>
 
-    <ion-icon name="cart" (click)="auth.addToList('cart',data.id)"
-    [color]="auth.checkIsFavorite('cart',data.id)===true?'danger': 'light'" slot="end"></ion-icon>
-
-<!--     <ion-icon *ngIf="auth.checkIsFavorite(data.id)===true" name="heart" color="danger" slot="end"></ion-icon>
-    <ion-icon *ngIf="auth.checkIsFavorite(data.id)===false" name="heart"  color="light" slot="end"></ion-icon>
-  -->
-  </ion-item>
 </ion-card>

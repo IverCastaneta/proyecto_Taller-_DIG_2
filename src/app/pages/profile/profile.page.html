@@ -1,4 +1,5 @@
 <ion-header [translucent]="true">
+<h1>Tu perfil</h1>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -6,20 +7,18 @@
     <ion-row>
       <ion-col>
         <div class="imagen">
-          <img src="https://drive.google.com/file/d/1BzwK6OkUPRF4MIbvh7-L34LQApDFhaXK/view?usp=drive_link" alt="">
+          <div class="color"></div>
+          <h1 class="nombre">{{auth.profile?.name}}</h1>
         </div>
       </ion-col>
-      <ion-col>
-        <p>Hola,</p>
-        <h1>{{auth.profile?.name}}</h1>
+      <ion-col class="datos">
+        <h2>Hola, {{auth.profile?.name}} <br></h2>
+        <hr>
         <p>
-          {{auth.profile?.name}} <br>
-
-          {{auth.profile?.email}} <br>
-
-          whatsapp: {{auth.profile?.phone}} <br>
-
+          {{auth.profile?.email}} <br>  
         </p>
+        <hr>
+        <p>whatsapp: {{auth.profile?.phone}} <br></p>
       </ion-col>
       <p *ngFor="let lugar of lugaresPropios">
         {{lugar.nombre}} <br>
@@ -38,28 +37,33 @@
       </ion-card>
     </ion-row>
   </ion-grid>
-  <hr color="mostaza2">
+  <hr>
   <ion-list>
     <h2>Acerca de tí:</h2>
-    <hr color="blanquito">
-    <ion-item>
+    <ion-row>
+    <ion-chip>
       <ion-avatar aria-hidden="true" slot="start">
         <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
       </ion-avatar>
       <ion-label>Artista</ion-label>
-    </ion-item>
-    <ion-item>
+    </ion-chip>
+  </ion-row>
+  <ion-row>
+    <ion-chip>
       <ion-avatar aria-hidden="true" slot="start">
         <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
       </ion-avatar>
       <ion-label>Propietario</ion-label>
-    </ion-item>
-    <ion-item>
+    </ion-chip>
+  </ion-row>
+  <ion-row>
+    <ion-chip>
       <ion-avatar aria-hidden="true" slot="start">
         <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
       </ion-avatar>
       <ion-label>Productora</ion-label>
-    </ion-item>
+    </ion-chip>
+  </ion-row>
   </ion-list>
 </ion-content>
 
