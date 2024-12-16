@@ -182,6 +182,6 @@ export class AuthService {
 
   // buscar reseva mas add
 
-
   
 }
+// por si acaso git add -1612
