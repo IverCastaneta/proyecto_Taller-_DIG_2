@@ -7,12 +7,13 @@ p{
     padding: 0;
     margin: 0;
 }
-.nombre{
-    padding-top: 2vh;
-    padding-left: 3vh;
-}
 .imagen{
-    padding-left: 3vh;
+
+    display: flex; /* Activa Flexbox */
+  flex-direction: column; /* Organiza los hijos en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+
 }
 .color{
     width: 120px;
@@ -30,6 +31,12 @@ p{
 }
 .datosLugar{
     padding-left: 2vh;
+}
+.acercaDe{
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los hijos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
 }
 ion-list{
     background-color: var(--dark);
@@ -49,7 +56,6 @@ ion-list{
 }
 ion-chip{
     background: #fff;
-    padding: 2% 4% 2% 4%;
     border-radius: 120px ;
     color: var(--ion-color-primary);
 }
