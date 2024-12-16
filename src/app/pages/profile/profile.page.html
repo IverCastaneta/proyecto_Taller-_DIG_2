@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-<h1>Tu perfil</h1>
+  <h1>Tu perfil</h1>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -15,7 +15,7 @@
         <h3>Hola, {{auth.profile?.name}} <br></h3>
         <hr>
         <p>
-          {{auth.profile?.email}} <br>  
+          {{auth.profile?.email}} <br>
         </p>
         <hr>
         <p>whatsapp: {{auth.profile?.phone}} <br></p>
@@ -23,54 +23,66 @@
     </ion-row>
   </ion-grid>
   <hr>
+
+
+
+
   <ion-list>
     <h2>Acerca de tí:</h2>
     <ion-row>
-    <ion-chip>
-      <ion-avatar aria-hidden="true" slot="start">
-        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-      <ion-label>Artista</ion-label>
-    </ion-chip>
-  </ion-row>
-  <ion-row>
-    <ion-chip>
-      <ion-avatar aria-hidden="true" slot="start">
-        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-      <ion-label>Propietario</ion-label>
-    </ion-chip>
-  </ion-row>
-  <ion-row>
-    <ion-chip>
-      <ion-avatar aria-hidden="true" slot="start">
-        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-      </ion-avatar>
-      <ion-label>Productora</ion-label>
-    </ion-chip>
-  </ion-row>
+      <ion-chip>
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Artista</ion-label>
+      </ion-chip>
+    </ion-row>
+    <ion-row>
+      <ion-chip>
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Propietario</ion-label>
+      </ion-chip>
+    </ion-row>
+    <ion-row>
+      <ion-chip>
+        <ion-avatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Productora</ion-label>
+      </ion-chip>
+    </ion-row>
   </ion-list>
-  <ion-row class="datosLugar">
-    <p *ngFor="let lugar of lugaresPropios"><br>
-      {{lugar.nombre}} <br>
-      {{lugar.direccion}} <br>
-      {{lugar.nombre_propietario}}
-    </p>
-  </ion-row>
-    <ion-card *ngFor="let lugar of lugaresPropios">
-      <ion-card-header>
-        <ion-card-title color="primary">{{lugar.nombre}} </ion-card-title>
-        <ion-card-subtitle>{{lugar.nombre_propietario}} | USD. {{lugar.precio}}</ion-card-subtitle>
-      </ion-card-header>
+  <hr>
+  <h1 style="text-align: center;">Tus Reservas</h1>
 
-      <ion-card-content>
-        {{lugar.direccion}}
-      </ion-card-content>
-    </ion-card>
+  <ion-card *ngFor="let reserva of reservas">
+    <ion-card-header>
+      <ion-card-title>{{ reserva.nombre }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Descripción: {{ reserva.descripcion }}</p>
+      <p>Precio: {{ reserva.precio | currency }}</p>
+      <p>Dirección: {{ reserva.direccion }}</p>
+    </ion-card-content>
+  </ion-card>
+<hr>
+  <h1 style="text-align: center;">Tus Lugares</h1>
+  <ion-card *ngFor="let lugar of lugaresPropios">
+    <ion-card-header>
+      <ion-card-title color="primary">{{lugar.nombre}} </ion-card-title>
+      <ion-card-subtitle>{{lugar.nombre_propietario}} | USD. {{lugar.precio}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{lugar.direccion}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
 <ion-footer>
   <ion-toolbar>
-    <app-tab ></app-tab>
+    <app-tab></app-tab>
   </ion-toolbar>
 </ion-footer>

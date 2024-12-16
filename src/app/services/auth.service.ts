@@ -181,7 +181,20 @@ export class AuthService {
   }
 
   // buscar reseva mas add
-
+  async getReservas(uid: string) {
+    try {
+      // Obtener el documento del usuario
+      const userDoc = await this.firestore.collection('users').doc(uid).get().toPromise();
+      if (userDoc && userDoc.data()) {
+        const userData = userDoc.data() as any;
+        return userData.reservas || [];
+      }
+      return [];
+    } catch (error) {
+      console.error('Error al obtener reservas:', error);
+      return [];
+    }
+  }
 
   
 }
