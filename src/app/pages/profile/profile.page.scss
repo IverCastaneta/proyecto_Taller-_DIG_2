@@ -1,6 +1,7 @@
 ion-header{
     padding-top: 3vh;
     padding-left: 2vh;
+    background-color: #130223;
 }
 p{
     padding: 0;
@@ -8,7 +9,7 @@ p{
 }
 .nombre{
     padding-top: 2vh;
-    padding-left: 5vh;
+    padding-left: 3vh;
 }
 .imagen{
     padding-left: 3vh;
@@ -24,6 +25,8 @@ p{
 }
 .datos{
     padding-top: 5vh;
+    width: 40px;
+    padding-right: 2vh;
 }
 ion-list{
     background-color: var(--dark);

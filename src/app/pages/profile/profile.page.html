@@ -12,7 +12,7 @@
         </div>
       </ion-col>
       <ion-col class="datos">
-        <h2>Hola, {{auth.profile?.name}} <br></h2>
+        <h3>Hola, {{auth.profile?.name}} <br></h3>
         <hr>
         <p>
           {{auth.profile?.email}} <br>  
@@ -20,11 +20,13 @@
         <hr>
         <p>whatsapp: {{auth.profile?.phone}} <br></p>
       </ion-col>
+    <ion-row>
       <p *ngFor="let lugar of lugaresPropios">
         {{lugar.nombre}} <br>
         {{lugar.direccion}} <br>
         {{lugar.nombre_propietario}}
       </p>
+    </ion-row>
       <ion-card *ngFor="let lugar of lugaresPropios">
         <ion-card-header>
           <ion-card-title color="primary">{{lugar.nombre}} </ion-card-title>
