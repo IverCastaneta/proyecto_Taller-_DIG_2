@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ReservationModalComponent } from '../reservation-modal/reservation-modal.component';
 
 @Component({
   selector: 'app-action-calendar',
@@ -7,8 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionCalendarComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private modalCtrl: ModalController) { }
+  async presentReservationModal() {
+    const modal = await this.modalCtrl.create({
+      component: ReservationModalComponent,
+    });
+    return await modal.present();
+  }
 
+  onActionClick() {
+    // Aquí puedes añadir lógica adicional si es necesario
+    this.presentReservationModal();
+  }
   public actionSheetButtons = [
     {
       text: 'Delete',

@@ -18,10 +18,11 @@ import { EventoComponenteComponent } from 'src/app/components/evento-componente/
 import { FechaSemanaComponent } from 'src/app/components/fecha-semana/fecha-semana.component';
 import { FechaMesComponent } from 'src/app/components/fecha-mes/fecha-mes.component';
 import { RouterModule } from '@angular/router';
+import { ReservationModalComponent } from 'src/app/components/reservation-modal/reservation-modal.component';
 
 @NgModule({
-  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent, ToolEventosComponent, EventoComponenteComponent, FechaSemanaComponent, FechaMesComponent],
-  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent, ToolEventosComponent, EventoComponenteComponent, FechaSemanaComponent, FechaMesComponent],
+  exports: [CardComponent, TabsComponent, TabComponent, CardpapuComponent,  ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent, ToolEventosComponent, EventoComponenteComponent, FechaSemanaComponent, FechaMesComponent, ReservationModalComponent],
+  declarations: [CardComponent, TabsComponent, TabComponent, CardpapuComponent, ToolbarComponent, ActionCalendarComponent, SearchBarComponent, DescripcionComponent, CardReservaComponent,BackComponent, MinicardsComponent, ToolbarmarketplaceComponent, ToolEventosComponent, EventoComponenteComponent, FechaSemanaComponent, FechaMesComponent, ReservationModalComponent],
   imports: [
     CommonModule,
     IonicModule.forRoot({

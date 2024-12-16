@@ -8,6 +8,7 @@ import { ViewLugarPageRoutingModule } from './view-lugar-routing.module';
 
 import { ViewLugarPage } from './view-lugar.page';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
+import { ReservationModalComponent } from 'src/app/components/reservation-modal/reservation-modal.component';
 
 @NgModule({
   imports: [
