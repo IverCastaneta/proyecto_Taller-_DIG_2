@@ -82,7 +82,7 @@ export class AuthService {
 
 
 
-  
+
 
   addToList(field: any, uid: any) {
     if (this.profile) {
@@ -150,34 +150,38 @@ export class AuthService {
       return false;
     }
   }
-// para add antes de modificar algo
+  // para add antes de modificar algo
 
-async addLugar(lugarData: { 
-  nombre: string; 
-  descripcion: string; 
-  precio: number; 
-  direccion: string; 
-}) {
-  try {
-    // Verificar si el usuario está autenticado
-    const storedUser = localStorage.getItem('user');
-    if (!storedUser) throw new Error('Usuario no autenticado');
+  async addLugar(lugarData: {
+    nombre: string;
+    descripcion: string;
+    precio: number;
+    direccion: string;
+  }) {
+    try {
+      // Verificar si el usuario está autenticado
+      const storedUser = localStorage.getItem('user');
+      if (!storedUser) throw new Error('Usuario no autenticado');
 
-    const user = JSON.parse(storedUser);
+      const user = JSON.parse(storedUser);
 
-    // Crear un nuevo documento en la colección 'lugares'
-    const lugarId = this.firestore.createId(); // Generar un ID único
-    await this.firestore.collection('lugares').doc(lugarId).set({
-      ...lugarData,
-      userId: user.uid, // UID del usuario autenticado como propietario
-      creadoEn: new Date() // Fecha de creación
-    });
+      // Crear un nuevo documento en la colección 'lugares'
+      const lugarId = this.firestore.createId(); // Generar un ID único
+      await this.firestore.collection('lugares').doc(lugarId).set({
+        ...lugarData,
+        userId: user.uid, // UID del usuario autenticado como propietario
+        creadoEn: new Date() // Fecha de creación
+      });
 
-    console.log('Lugar añadido correctamente');
-    this.router.navigateByUrl('/lugares'); // Redirigir al listado de lugares
-  } catch (error) {
-    console.error('Error al añadir el lugar:', error);
+      console.log('Lugar añadido correctamente');
+      this.router.navigateByUrl('/lugares'); // Redirigir al listado de lugares
+    } catch (error) {
+      console.error('Error al añadir el lugar:', error);
+    }
   }
-}
 
+  // buscar reseva mas add
+
+
+  
 }
