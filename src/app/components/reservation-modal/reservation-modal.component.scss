@@ -18,12 +18,78 @@
 }
 
 ion-button {
-    --background: #3880ff; // Color primario de Ionic
+    --background: #f3b262;
+// Color primario de Ionic
     --color: #fff;
     --border-radius: 8px;
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 ion-button:hover {
-    --background: #3171e0; // Efecto hover
+    --background: #d59546; // Efecto hover
 }
+.verification-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    background-color: #f9f9f9;
+  
+    h2 {
+      color: #4CAF50;
+      font-size: 1.8rem;
+      margin-top: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  
+    p {
+      color: #666;
+      font-size: 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+  }
+  
+  /* SVG Animations */
+  .tick-animation {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .circle {
+    stroke-dasharray: 63; /* Perímetro del círculo */
+    stroke-dashoffset: 63; /* Oculta el trazo */
+    animation: drawCircle 1s ease-out forwards;
+  }
+  
+  .check {
+    stroke-dasharray: 10; /* Longitud del check */
+    stroke-dashoffset: 10; /* Oculta el trazo */
+    animation: drawCheck 1s ease-out forwards 1s; /* Inicia después del círculo */
+  }
+  
+  /* Keyframes para la animación */
+  @keyframes drawCircle {
+    to {
+      stroke-dashoffset: 0; /* Dibuja el círculo completo */
+    }
+  }
+  
+  @keyframes drawCheck {
+    to {
+      stroke-dashoffset: 0; /* Dibuja el check completo */
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
