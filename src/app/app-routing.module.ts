@@ -82,7 +82,11 @@ const routes: Routes = [
   {
     path: 'view-lugar/:idLugar',
     loadChildren: () => import('./pages/view-lugar/view-lugar.module').then( m => m.ViewLugarPageModule)
+  },  {
+    path: 'add-lugar',
+    loadChildren: () => import('./pages/add-lugar/add-lugar.module').then( m => m.AddLugarPageModule)
   },
+
 
 
 ];

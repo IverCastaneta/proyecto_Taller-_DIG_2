@@ -14,6 +14,13 @@
   <app-card [data]="lugar" *ngFor="let lugar of lugaresFiltrados"></app-card>
   <br style="height: 100px;" color="primary">
   <br style="height: 100px;" color="primary">
+
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" style="margin-bottom: 60px; margin-right: 12px;" routerLink="/add-lugar/">
+    <ion-fab-button color="mostaza2">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
 
 <ion-footer [translucent]="true">

@@ -1,0 +1,37 @@
+
+
+<ion-content>
+  <h1  slot="fixed"  vertical="top" style="margin-left: 100px;">Añade un nuevo lugar</h1>
+  <app-back  routerLink="/view-profile/cCm4kpD0dNMYhAn2f7mjNNAEVKm2"></app-back>
+
+  <ion-card style="margin-top: 80px;">
+    <ion-card-content>
+      <form (ngSubmit)="submitLugar()">
+        <ion-item>
+          <ion-label position="floating">Nombre del Lugar</ion-label>
+          <ion-input type="text" [(ngModel)]="lugar.nombre" name="nombre" required></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Descripción</ion-label>
+          <ion-textarea [(ngModel)]="lugar.descripcion" name="descripcion" required></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Precio</ion-label>
+          <ion-input type="number" [(ngModel)]="lugar.precio" name="precio" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Ubicación</ion-label>
+          <ion-input type="text" [(ngModel)]="lugar.direccion" name="direccion" required></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" type="submit" color="primary">Añadir Lugar</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+  
+
+  
+</ion-content>
